@@ -1,0 +1,56 @@
+.cart {
+    position: absolute;
+    width: 17rem;
+    min-height: 10rem;
+    top: 100%;
+    right: -70%;
+    box-shadow: 0 12px 25px 5px rgba(0, 0, 0, .2);
+    z-index: 11;
+    background-color: #fff;
+    border-radius: .5rem;
+    
+}
+
+.text {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+    font-size: .7rem;
+}
+
+.cart .title {
+    padding:  1rem;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.cart h1 {
+    font-size: .8rem;
+    font-weight: 900;
+    color: var(--Very-dark-blue);
+}
+
+.cart ul {
+    list-style: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .cart {
+        position: fixed;
+        min-width: 90%;
+        min-height: 15rem;
+        margin: 1.5rem;
+        top: 10vh;
+        right: 0;
+        z-index: 11;
+        
+    }
+    .cart .title {
+        padding:  2rem;
+    }
+    .cart h1 {
+        font-size: 1rem;
+    }
+    
+}

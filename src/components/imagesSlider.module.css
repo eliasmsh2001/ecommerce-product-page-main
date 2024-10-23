@@ -1,0 +1,96 @@
+
+
+
+
+.sliderContainer {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    
+}
+
+.closedModal {
+    display: none;
+}
+
+.sliderContainer section {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.image{
+    max-height: 25rem;
+    max-width: 25rem;
+    display: flex;
+    position: relative;
+}
+
+.image img{
+    max-height:100%;
+    max-width: 100%;
+    border-radius: .6rem;
+}
+
+
+.image button {
+    position: absolute;
+    top: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 0;
+}
+
+.image button:focus {
+    outline: 0;
+}
+.image button:active{
+    transform: scale(.9);
+}
+
+.image .previousButton {
+    left: -1.2rem;
+}
+
+.image .nextButton {
+    right: -1.2rem;
+}
+
+.imageButtonsContainer {
+    margin-top: 2rem;
+}
+
+
+
+
+.closeBtnContainer {
+    min-width: 25rem;
+    height: 2rem;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: 0;
+    height: 1rem;
+    width: 1rem;
+}
+
+.closeBtn:hover path{
+    fill: var(--Orange);
+}
+

@@ -1,0 +1,55 @@
+
+
+
+.imgbtn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: .5em;
+    background-color: aqua;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    margin: 0 .6rem;
+}
+
+.imgbtn:hover {
+    opacity: .6;
+}
+
+.imgbtn img{
+    height: 100%;
+}
+
+#active {
+    border: 3px solid var(--Orange);
+}
+
+#active::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--Light-grayish-blue);
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+
+@media screen and (max-width: 720px){
+    .imgbtn {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: .5em;
+        background-color: aqua;
+        overflow: hidden;
+        border: 0;
+        cursor: pointer;
+        background: transparent;
+        position: relative;
+        margin: 0 .3rem;
+    }
+  }
